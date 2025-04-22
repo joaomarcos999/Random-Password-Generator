@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <h1>
+        Random Password Generator
+    </h1>
+    <div class="password-length">
+        <label for="lengthSlider">Password Length: <span id="lengthValue">10</span></label>
+        <input type="range" id="lengthSlider" min="8" max="12" value="10" step="1">
+    </div>
+    <button class="generate-password">Generate Passwords</button>
+    <hr class="divider">
+    <div class="sugested-passwords">
+        <div class="password-list" id="passwordList">
+            <div class="password-field"></div>
+            <div class="password-field"></div>
+            <div class="password-field"></div>
+            <div class="password-field"></div>
+        </div>
+    </div>
+    <div class="password-copy">
+</body>
+</html>
+
+
+<!-- instruções: https://github.com/xdelmo/random-password-generator -->

@@ -1,0 +1,160 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.password-length {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#lengthValue {
+    font-weight: bold;
+    color: #764ba2;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.divider {
+    border: none;
+    height: 2px;
+    width: 80%;
+    margin: 32px auto;
+    background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+    border-radius: 1px;
+    opacity: 0.7;
+}
+
+.generate-password {
+    background: linear-gradient(90deg, #ee5743 0%, #eeec68 100%);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.password-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.password-field {
+    height: 2rem;
+    width: 10rem;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 8px rgba(118,75,162,0.08);
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color: #764ba2;
+    text-align: center;
+    word-break: break-all;
+    /* user-select: all; */
+    transition: box-shadow 0.2s;
+}
+
+.password-copy{
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    min-height: 1.5em;
+}
+
+input[type="range"] {
+    width: 220px;
+    margin-top: 0.5rem;
+    accent-color: #764ba2;
+    height: 4px;
+    border-radius: 2px;
+    background: #e0e0e0;
+    outline: none;
+    transition: background 0.3s;
+}
+
+input[type="range"]:hover {
+    background: #d1c4e9;
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #764ba2;
+    box-shadow: 0 2px 8px rgba(118,75,162,0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    background: #667eea;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #764ba2;
+    box-shadow: 0 2px 8px rgba(118,75,162,0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    background: #667eea;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #764ba2;
+    box-shadow: 0 2px 8px rgba(118,75,162,0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="range"]:focus::-ms-thumb {
+    background: #667eea;
+}
+
+/* Hide the outline for Firefox */
+input[type="range"]::-moz-focus-outer {
+    border: 0;
+}
